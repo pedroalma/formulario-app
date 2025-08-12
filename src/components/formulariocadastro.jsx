@@ -12,6 +12,12 @@ function FormularioCadastro() {
 
     const [user, setUser] = useState({});
 
+    function mostrar(){
+        <div>
+            <h1>{setNome}</h1>
+            <h1>{setSobrenome}</h1>
+        </div>
+    }
     function cadastrarUsuario(e) {
         e.preventDefault();
         setUser({
@@ -58,6 +64,7 @@ function FormularioCadastro() {
                     <input placeholder="rua" type="text" id="rua" value={rua} onChange={(e) => setRua(e.target.value)}/>
                     <input placeholder="complemento" type="text" id="complemento" value={complemento} onChange={(e) => setComplemento(e.target.value)}/>
                     </div>
+                    <button type="submit" onClick={mostrar}>Enviar</button>
                 </form>    
             </div>
         </div>

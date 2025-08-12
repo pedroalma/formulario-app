@@ -40,9 +40,10 @@ function Tarefas() {
             </form> 
             <div>
                 <ul>
-                    {tarefas.map((tarefas) => (
+                    <strong> {tarefas.map((tarefas) => (
                         <li key={tarefas}>{tarefas}</li>
-                    ))}
+                    ))} </strong>
+                    
                 </ul>
             </div>   
         </div>

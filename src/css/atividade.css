@@ -1,0 +1,48 @@
+:root{
+    /* cor */
+    --branco: #fff;
+    --preto: #000;
+    --color-primario: #FAD1D9;
+    --color-secundario: #4C000F;
+    --color-terciaria: #8D4E5B;
+    /* texto */
+    --fonte-padrao: 'Poppins', sans-serif;
+    --tamanho-fonte-titulo: 1.5rem; 
+    --tamanho-fonte-titulo2: 1.5rem; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--preto);
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--brancoq);
+}
+.logo-img{
+    width: 45px;
+}
+.topo{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    display: flex;
+}
+.menu-lista{
+    display: flex;
+    font-size: 1.2rem;
+}
+.logo-dentro-cima{
+    font-size: var(--tamanho-fonte-titulo);
+}
+.logo-dentrobaixo{
+    font-size: var(--tamanho-fonte-titulo2);
+}
+#login-foto{
+    background-image: url("../assets/usuario.png");
+    
+}
